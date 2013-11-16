@@ -75,6 +75,36 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do
+  gem 'debugger'
+  gem 'delorean'
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'flay', '>= 2.3.1'
+  gem 'hirb', '>= 0.7.1'
+  gem 'mailcatcher'
+  gem 'localtunnel'
+  gem 'rails_best_practices'
+  #gem 'reek'
+  gem 'request-log-analyzer'
+  gem 'smusher'
+  gem 'quiet_assets'
+  gem 'railroady'
+  gem 'interactive_editor'
+  gem 'awesome_print'
+  gem 'bullet'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
+  gem "guard-rspec"
+  gem 'rails_panel'
+  #gem 'tracer_bullet'
+  gem 'binding_of_caller' #adds REPL to better_errors
+  gem 'guard-livereload' #adds live reload
+  gem 'rack-livereload'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

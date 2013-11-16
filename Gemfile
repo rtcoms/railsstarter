@@ -1,18 +1,34 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails'
+gem 'rails', '4.0.1'
 
 
 # Servers
 gem 'puma'
 gem 'unicorn'
+gem "thin"
 gem 'resque'
 gem  'mina' #for deployment
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-gem 'sqlite3'
 gem 'mysql2'
+
+gem 'foreigner'
+gem 'friendly_id'
+gem 'rabl'
+gem 'faye'
+gem 'sync'
+gem 'feedzirra'
+# -- gem 'rails-api' -- causing some issue with flash variable
+gem 'rabl'
+gem "bcrypt-ruby"
+gem "uuidtools"
+# Performance and Exception management
+# gem 'airbrake'
+# gem 'newrelic_rpm'
+gem 'has_scope'
+gem 'acts-as-taggable-on'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 
@@ -36,6 +52,24 @@ gem 'jbuilder'
 
 gem 'devise'
 
+gem 'omniauth'
+gem "omniauth-facebook"
+gem "omniauth-twitter"
+gem 'omniauth-github'
+gem 'omniauth-twitter'
+gem 'omniauth-openid'
+gem 'omniauth-twitter'
+gem 'omniauth-openid'
+gem 'simple_form'
+gem 'reform'
+gem 'kaminari'
+gem 'acts-as-taggable-on'
+gem 'destroyed_at'
+gem 'validates_timeliness'
+#for search
+#gem 'searchkick' -- depends on old version of gem tire -- so gives error
+gem 'ransack'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -51,4 +85,4 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]

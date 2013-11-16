@@ -70,6 +70,39 @@ gem 'validates_timeliness'
 #gem 'searchkick' -- depends on old version of gem tire -- so gives error
 gem 'ransack'
 
+
+gem 'haml_assets'
+gem "bourbon"
+# gem 'handlebars_assets'
+gem 'i18n-js'
+gem 'jquery-turbolinks'
+gem 'less-rails'
+gem 'susy'
+gem 'therubyracer'
+gem 'turbolinks'
+gem 'twitter-bootstrap-rails', github: 'diowa/twitter-bootstrap-rails', branch: 'fontawesome-3.2.1'
+gem 'bootstrap-sass'
+gem 'backbone-on-rails'
+gem 'zurb-foundation'
+gem 'redcarpet'
+gem 'chartkick'
+gem 'lazyload-rails'
+gem 'carrierwave'
+#gem 'recaptcha'
+
+
+# Security
+# gem 'secure_headers'
+# gem 'exception_notification'
+gem "analytics-ruby"
+# Miscellanea
+# gem 'google-analytics-rails'
+gem 'haml'
+# gem 'http_accept_language'
+gem 'nokogiri'
+# gem 'resque', require: 'resque/server' # Resque web interface
+gem 'sidekiq'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -104,6 +137,24 @@ group :development do
   gem 'guard-livereload' #adds live reload
   gem 'rack-livereload'
 end
+
+group :test do
+  # gem 'capybara'
+  # gem 'coveralls', require: false
+  # gem 'database_cleaner'
+  # gem 'email_spec'
+  # gem 'launchy'
+  gem 'rspec'
+  gem 'rspec-rails'
+  # gem 'selenium-webdriver'
+  # gem 'simplecov', require: false
+  # gem 'webmock', require: false
+  # gem "ffaker"
+  # gem "rb-inotify", "~> 0.9"
+  # gem 'factory_girl_rails'
+  # gem 'faker'
+end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

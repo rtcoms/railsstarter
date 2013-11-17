@@ -227,6 +227,7 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
+  app_config = Rails.configuration.app_config
   config.omniauth :facebook, app_config[:facebook]["app_id"], app_config[:facebook]["app_secret"], :client_options => {:ssl => {:ca_path => '/etc/ssl/certs'}}
 
   # ==> Warden configuration

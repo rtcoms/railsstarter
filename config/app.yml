@@ -7,12 +7,6 @@ development: &dev
 test:
   <<: *dev
 
-signup_project_local_mysql:
-  <<: *dev
-
-strong_development:
-  <<: *dev
-
 # no need to specify ?
 # :redirect_uri => "http://milaap.org/auth/facebook/callback",
 # and :options => {:scope => 'email,user_location'}

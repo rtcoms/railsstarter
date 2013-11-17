@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @authentication.user_id %>
+</p>
+
+<p>
+  <strong>Provider:</strong>
+  <%= @authentication.provider %>
+</p>
+
+<p>
+  <strong>Index:</strong>
+  <%= @authentication.index %>
+</p>
+
+<p>
+  <strong>Create:</strong>
+  <%= @authentication.create %>
+</p>
+
+<p>
+  <strong>Destroy:</strong>
+  <%= @authentication.destroy %>
+</p>
+
+<%= link_to 'Edit', edit_authentication_path(@authentication) %> |
+<%= link_to 'Back', authentications_path %>

@@ -1,0 +1,28 @@
+
+development: &dev
+  facebook:
+    app_id: 420899084647587
+    app_secret: c5dd4df232b51cb4d081b780dad8d93c
+
+test:
+  <<: *dev
+
+signup_project_local_mysql:
+  <<: *dev
+
+strong_development:
+  <<: *dev
+
+# no need to specify ?
+# :redirect_uri => "http://milaap.org/auth/facebook/callback",
+# and :options => {:scope => 'email,user_location'}
+production:
+  facebook:
+    app_id: 130797286950419
+    app_secret: 88eb75a994db2ecce5ee4eac5cf8d700
+
+staging: &stg
+  facebook:
+    app_id: 415335551915616
+    app_secret: 5deaf165bef01e861f14b8fbb83cb933
+

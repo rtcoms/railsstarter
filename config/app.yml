@@ -3,6 +3,9 @@ development: &dev
   facebook:
     app_id: 420899084647587
     app_secret: c5dd4df232b51cb4d081b780dad8d93c
+  github:
+    app_id: a33978c7942338dba162
+    app_secret: 90493c61684f7171c1adb4fe48052302b226f795
 
 test:
   <<: *dev
@@ -12,11 +15,17 @@ test:
 # and :options => {:scope => 'email,user_location'}
 production:
   facebook:
-    app_id: 130797286950419
-    app_secret: 88eb75a994db2ecce5ee4eac5cf8d700
+    app_id: fbapp_id
+    app_secret: fbapp_secret
+  github:
+    app_id: gitapp_id
+    app_secret: gitapp_secret
 
 staging: &stg
   facebook:
-    app_id: 415335551915616
-    app_secret: 5deaf165bef01e861f14b8fbb83cb933
+    app_id: fbapp_id
+    app_secret: fbapp_secret
+  github:
+    app_id: gitapp_id
+    app_secret: gitapp_secret
 

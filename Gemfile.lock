@@ -226,6 +226,10 @@ GEM
       actionpack (>= 3.1)
       less (~> 2.4.0)
     libv8 (3.16.14.3)
+    linkedin (0.4.4)
+      hashie (>= 1.2, < 2.1)
+      multi_json (~> 1.0)
+      oauth (~> 0.4)
     listen (2.2.0)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -285,6 +289,8 @@ GEM
     omniauth-github (1.1.1)
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.1)
+    omniauth-linkedin (0.1.0)
+      omniauth-oauth (~> 1.0)
     omniauth-oauth (1.0.1)
       oauth
       omniauth (~> 1.0)
@@ -529,6 +535,7 @@ DEPENDENCIES
   kaminari
   lazyload-rails
   less-rails
+  linkedin
   localtunnel
   mailcatcher
   meta_request
@@ -538,6 +545,7 @@ DEPENDENCIES
   omniauth
   omniauth-facebook
   omniauth-github
+  omniauth-linkedin
   omniauth-openid
   omniauth-twitter
   pry

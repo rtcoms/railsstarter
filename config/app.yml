@@ -6,6 +6,9 @@ development: &dev
   github:
     app_id: a33978c7942338dba162
     app_secret: 90493c61684f7171c1adb4fe48052302b226f795
+  linkedin:
+    app_id: 75rhnfr4e9aawg
+    app_secret: GR6ysnAv6UaIoaTZ
 
 test:
   <<: *dev
@@ -20,6 +23,9 @@ production:
   github:
     app_id: gitapp_id
     app_secret: gitapp_secret
+  linkedin:
+    app_id: a33978c7942338dba162
+    app_secret: 90493c61684f7171c1adb4fe48052302b226f795
 
 staging: &stg
   facebook:
@@ -28,4 +34,7 @@ staging: &stg
   github:
     app_id: gitapp_id
     app_secret: gitapp_secret
+  linkedin:
+    app_id: a33978c7942338dba162
+    app_secret: 90493c61684f7171c1adb4fe48052302b226f795
 

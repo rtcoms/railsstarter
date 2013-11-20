@@ -30,6 +30,10 @@ class AuthenticationsController < ApplicationController
     render :text => request.env["omniauth.auth"].to_yaml
   end
 
+  def linkedin
+    render :text => request.env["omniauth.auth"].to_yaml
+  end
+
   # DELETE /authentications/1
   # DELETE /authentications/1.json
   def destroy

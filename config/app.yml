@@ -1,8 +1,9 @@
 
 development: &dev
   facebook:
-    app_id: 420899084647587
-    app_secret: c5dd4df232b51cb4d081b780dad8d93c
+    app_id: 538105179607486
+    app_secret: 4c12f434d70c5e34adca57c4fec238d5
+    scope: "email, read_friendlists, read_insights, read_stream"
   github:
     app_id: a33978c7942338dba162
     app_secret: 90493c61684f7171c1adb4fe48052302b226f795

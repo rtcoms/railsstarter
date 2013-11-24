@@ -3,6 +3,7 @@ Testlogin::Application.routes.draw do
 
   devise_for :users, :controllers => { :omniauth_callbacks => "authentications", :registrations => "registrations" }
   get '/auth/:provider/callback' => 'authentications#create'
+  match '/fetch/linkedin' => 'authentications#fetch_linkedin', via: [:get, :post]
   get "home/index"
   resources :authentications
   # The priority is based upon order of creation: first created -> highest priority.
